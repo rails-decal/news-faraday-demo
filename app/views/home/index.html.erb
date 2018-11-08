@@ -1,14 +1,3 @@
 <h1>News Articles!</h1>
 
-<p>
-    <% @response["articles"].each do |article| %>
-        <h2><%= article["title"] %></h2>
-        <h3><%= article["author"] %></h3>
-        <% if article["urlToImage"] %>
-            <p><%= image_tag(article["urlToImage"]) %></p>
-        <% end %>
-        <p><%= article["description"] %></p>
-        <%= link_to "Article", article["url"], :target => "_blank" %>
-        <hr />
-    <% end %>
-</p>
+<p></p>

@@ -1,1 +1,7 @@
 <h1>News Articles!</h1>
+
+<p><%= @res["articles"].each do |article| %> </p>
+  <h2><%= article["title"] %></h2>
+  <p><%= article["description"] %></p>
+  <hr>
+<% end %>

@@ -12,14 +12,19 @@
  *
  *= require_tree .
  *= require_self
- */
 
-body {
+*/
+
+/* body {
     font-family: sans-serif;
     max-width: 600px;
     margin: 0 auto;
-}
+} */
 
 img {
     width: 200px;
+}
+
+.mui-container {
+    max-width: 860px !important;
 }

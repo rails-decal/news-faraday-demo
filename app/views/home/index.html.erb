@@ -1,6 +1,9 @@
-<h1>News Articles!</h1>
+<div class="mui-appbar">
+  <h1>News Articles!</h1>
+</div>
 
-<p>
+<div class="mui-container">
+
     <% @response["articles"].each do |article| %>
         <h2><%= article["title"] %></h2>
         <h3><%= article["author"] %></h3>
@@ -8,7 +11,11 @@
             <p><%= image_tag(article["urlToImage"]) %></p>
         <% end %>
         <p><%= article["description"] %></p>
-        <%= link_to "Article", article["url"], :target => "_blank" %>
+        <%= link_to "Article", article["url"], :target => "_blank", class: "mui-btn mui-btn--primary" %>
         <hr />
     <% end %>
+
+</div>
+<p>
+
 </p>
